@@ -1,7 +1,7 @@
 <template class="login">
     <div class="mb-3">
        <form action="">
-           <h2>Pagina de Login</h2>
+           <h2>Login</h2>
            <div>
                 <input type="text" class="form-control" placeholder="Admin" aria-label="Username" aria-describ v-model="login" />
            </div>
@@ -10,6 +10,7 @@
             </div>
             <div>
                 <button type="submit" class="btn btn-primary" @click="logar">Logar</button>
+                <p><a href="http://" target="_blank" rel="noopener noreferrer">Cadastre-se Aqui!</a></p>
             </div>
        </form>
     </div>
@@ -48,9 +49,19 @@
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         color: blue;
     }
+    p {
+        text-align: center;
+        padding: 10px;
+        font: optional;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
     input {
         margin: 10px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        background: rgb(249, 251, 252);
     }
 
     button {
@@ -62,13 +73,13 @@
         justify-content: center;
         align-items: center;
         height: 100vh;
-        background: rgb(245, 247, 248);
+        background: rgb(249, 251, 252);
     }
 
     form {
         justify-content: center;
         align-items: center;
-        border: 2px solid #ccc;
+        border: 2px solid rgb(87, 98, 181);
         border-radius: 10px;
     }
 
